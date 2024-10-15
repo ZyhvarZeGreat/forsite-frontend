@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "../../components/ui/button";
 // import Search from "../../components/Home Components/Search";
 import hero from "../../assets/hero.jpg";

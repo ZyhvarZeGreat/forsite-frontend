@@ -1,4 +1,12 @@
-const Project_Details = ({ scene, setScene }) => {
+import { scenes } from "../../../pages/Home/Consult";
+
+const Project_Details = ({
+  scene,
+  setScene,
+}: {
+  scene: scenes;
+  setScene: (scene: scenes) => void;
+}) => {
   return (
     <div className="w-full flex flex-col mt-24 mb-32 items-center justify-center">
       <div

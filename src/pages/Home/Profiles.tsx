@@ -1,5 +1,4 @@
 import Portfolio from "../../components/Profile Components/Portfolio";
-import ProductandServices from "../../components/Profile Components/ProductandServices";
 import Reviews from "../../components/Profile Components/Reviews";
 import Bottom_CTA from "../../Reusables/Bottom_CTA";
 const Profiles = () => {

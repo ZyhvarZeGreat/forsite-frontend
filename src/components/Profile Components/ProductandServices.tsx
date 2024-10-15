@@ -1,9 +1,7 @@
-import React from "react";
+// type Props = {};
 
-type Props = {};
+// const ProductandServices = (props: Props) => {
+//   return <div>ProductandServices</div>;
+// };
 
-const ProductandServices = (props: Props) => {
-  return <div>ProductandServices</div>;
-};
-
-export default ProductandServices;
+// export default ProductandServices;

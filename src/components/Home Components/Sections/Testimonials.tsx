@@ -1,5 +1,3 @@
-import React from "react";
-
 const Testimonials = () => {
   return (
     <div className="h-[400px] w-full bg-[#386A8B]">

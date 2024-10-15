@@ -1,9 +1,7 @@
-import React from "react";
 import { Button } from "../ui/button";
 import Search from "./Search";
 import hero from "../../assets/hero.jpg";
-import hero_left from "../../assets/hero-left.png";
-import hero_right from "../../assets/hero-right.png";
+
 const Hero = () => {
   return (
     <div className="w-full relative flex items-center justify-center">

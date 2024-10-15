@@ -1,4 +1,3 @@
-import React from "react";
 import img from "../../assets/hero.jpg";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Call, Global, Location, Sms } from "iconsax-react";

@@ -1,4 +1,3 @@
-import React from "react";
 import image from "../assets/logo.png";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "../lib/utils";

@@ -15,7 +15,9 @@ import { Checkbox } from "../../components/ui/checkbox";
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   type scenes = "Initial" | "Recover";
+
   const [scene, setScene] = useState<scenes>("Initial");
+  console.log(setScene);
   const { register, handleSubmit, getValues, formState } = useForm<LoginType>({
     resolver: zodResolver(loginSchema),
   });

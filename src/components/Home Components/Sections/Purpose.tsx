@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "../../ui/button";
 import img1 from "../../../assets/portfolio3.jpg";
 const Purpose = () => {

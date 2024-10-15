@@ -1,6 +1,12 @@
-import React from "react";
+import { scenes } from "../../../pages/Home/Consult";
 
-const Summary = ({ addedScenes, scene, setScene }) => {
+const Summary = ({
+  scene,
+  setScene,
+}: {
+  scene: scenes;
+  setScene: (scene: scenes) => void;
+}) => {
   return (
     <div className="w-full flex flex-col mb-32 mt-16 items-center justify-center">
       <div className=" flex  flex-col items-center justify-center w-full p-10">

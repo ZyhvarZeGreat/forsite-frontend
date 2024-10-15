@@ -1,5 +1,3 @@
-import React from "react";
-
 const ClientTab = () => {
   return (
     <div className=" flex w-full flex-col gap-24 items-center justify-center">

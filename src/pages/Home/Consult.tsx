@@ -76,32 +76,16 @@ const Consult = () => {
         </div>
       </div>
       {scene === "Personal Information" && (
-        <Personal_Information
-          addedScenes={addedScenes}
-          scene={scene}
-          setScene={handleSceneChange}
-        />
+        <Personal_Information scene={scene} setScene={handleSceneChange} />
       )}
       {scene === "Project Details" && (
-        <Project_Details
-          addedScenes={addedScenes}
-          scene={scene}
-          setScene={handleSceneChange}
-        />
+        <Project_Details scene={scene} setScene={handleSceneChange} />
       )}
       {scene === "Availability" && (
-        <Availability
-          addedScenes={addedScenes}
-          scene={scene}
-          setScene={handleSceneChange}
-        />
+        <Availability scene={scene} setScene={handleSceneChange} />
       )}
       {scene === "Summary" && (
-        <Summary
-          addedScenes={addedScenes}
-          scene={scene}
-          setScene={handleSceneChange}
-        />
+        <Summary scene={scene} setScene={handleSceneChange} />
       )}
       {scene !== "Summary" && <Bottom_CTA />}
     </div>

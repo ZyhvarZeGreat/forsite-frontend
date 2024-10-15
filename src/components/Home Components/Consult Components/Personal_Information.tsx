@@ -1,6 +1,11 @@
-import React from "react";
-
-const Personal_Information = ({ addedScenes, scene, setScene }) => {
+import { scenes } from "../../../pages/Home/Consult";
+const Personal_Information = ({
+  scene,
+  setScene,
+}: {
+  scene: scenes;
+  setScene: (scene: scenes) => void;
+}) => {
   return (
     <div className="w-full flex flex-col mt-24 mb-32 items-center justify-center">
       <div
@@ -36,7 +41,6 @@ const Personal_Information = ({ addedScenes, scene, setScene }) => {
         <div className="flex mt-10 w-[90%] items-start justify-end ">
           <button
             onClick={() => {
-              addedScenes.push("Personal Information");
               setScene("Project Details");
               console.log(scene);
             }}
