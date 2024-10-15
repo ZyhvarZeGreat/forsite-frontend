@@ -1,6 +1,6 @@
 const Testimonials = () => {
   return (
-    <div className="h-[400px] w-full bg-[#386A8B]">
+    <div className=" h-[200px] xl:h-[400px] w-full bg-[#386A8B]">
       <div className="flex flex-col h-full gap-12 text-white items-center justify-center">
         <h3 className="text-3xl font-semibold">What Our Client Says</h3>
         <p className="text-xl w-1/2">

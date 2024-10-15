@@ -6,7 +6,7 @@ import divider from "../../../assets/divider.png";
 const Process = () => {
   return (
     <div className="flex mt-32 gap-24 flex-col w-full max-w-[1366px]">
-      <div className="flex w-full items-start flex-col gap-4">
+      <div className="flex w-full items-center lg:items-start flex-col gap-4">
         <h4 className="text-4xl font-semibold">How it Works</h4>
         <p className=" font-medium">
           Manage your EPC process from start to finish either as a contractor or
@@ -17,15 +17,15 @@ const Process = () => {
         defaultValue="available"
         className=" flex relative  w-full flex-col items-center justify-center gap-8"
       >
-        <TabsList className="grid text-black  rounded-full px-4 w-[700px] h-[100px] grid-cols-2 font-semibold">
+        <TabsList className="grid text-black  rounded-full px-4 w-full xl:w-[700px]  h-[60px] lg:h-[70px] xl:h-[100px] grid-cols-2 font-semibold">
           <TabsTrigger
-            className=" text-2xl h-[70px] rounded-full"
+            className="  text-lg lg:text-xl xl:text-2xl h-[40px] lg:h-[50px] xl:h-[100px] rounded-full"
             value="available"
           >
             Engineers
           </TabsTrigger>
           <TabsTrigger
-            className=" text-2xl h-[70px] rounded-full"
+            className="  text-lg lg:text-xl xl:text-2xl h-[40px] lg:h-[50px] xl:h-[70px] rounded-full"
             value="funded"
           >
             Clients
@@ -37,7 +37,7 @@ const Process = () => {
         <TabsContent className="w-full" value="funded">
           <ClientTab />
         </TabsContent>
-        <div className="flex items-end justify-center w-full   absolute">
+        <div className=" hidden lg:flex items-end justify-center w-full   absolute">
           <img className="object-cover mt-[9rem]" src={divider} />
         </div>
         <div className="flex items-center py-24 justify-center ">

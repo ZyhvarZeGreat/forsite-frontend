@@ -5,10 +5,10 @@ import hero from "../../assets/hero.jpg";
 const Hero = () => {
   return (
     <div className="w-full relative flex items-center justify-center">
-      <div className=" relative w-full   h-[690px]">
+      <div className=" relative w-full h-[280px]   xl:h-[690px] sm:h-[400px]">
         <div className="bg-black/50  z-10 flex-col  top-0 bottom-0 left-0 right-0 absolute w-full h-full flex items-center justify-center">
           <div className="w-full gap-12  flex-col   h-full flex items-center justify-center">
-            <h3 className="text-5xl relative font-bold leading-snug text-white">
+            <h3 className=" text-2xl xl:text-5xl relative font-bold leading-snug text-white">
               {" "}
               Digitalized Management <br /> for EPC Contractors{" "}
             </h3>

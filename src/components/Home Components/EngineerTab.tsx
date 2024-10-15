@@ -8,8 +8,8 @@ const EngineerTab = () => {
         <h3 className="text-3xl font-semibold">Streamline your EPC with COG</h3>
       </div>
       <div className="flex flex-col w-full items-center justify-center gap-24">
-        <div className=" flex items-center justify-between w-full  ">
-          <div className="flex font-medium w-1/3 text-start flex-col items-start gap-4">
+        <div className=" flex gap-6 flex-col lg:flex-row items-center justify-between w-full  ">
+          <div className="flex font-medium  w-full lg:w-1/3  text-center lg:text-start flex-col items-center lg:items-start gap-4">
             <div className="h-12 text-2xl  w-12 flex items-center justify-center rounded-full bg-[#386A8B] text-white">
               1
             </div>
@@ -20,12 +20,12 @@ const EngineerTab = () => {
               verifying your credentials and expertise.
             </p>
           </div>
-          <div className="w-1/3 flex items-center justify-start">
+          <div className=" w-full lg:w-1/3 flex items-center justify-center lg:justify-start">
             <img className="w-[150px]" src={tab1} />
           </div>
         </div>
-        <div className=" flex items-center justify-between flex-row-reverse w-full  ">
-          <div className="flex font-medium w-1/3 text-start flex-col items-start gap-4">
+        <div className=" flex gap-6 flex-col items-center justify-between lg:flex-row-reverse w-full  ">
+          <div className="flex font-medium  w-full lg:w-1/3  text-center lg:text-start flex-col items-center lg:items-start gap-4">
             <div className="h-12 text-2xl  w-12 flex items-center justify-center rounded-full bg-[#386A8B] text-white">
               2
             </div>
@@ -37,12 +37,12 @@ const EngineerTab = () => {
               from others.
             </p>
           </div>
-          <div className="w-1/3 flex items-center justify-center">
+          <div className=" w-full lg:w-1/3 flex items-center justify-center">
             <img className="w-[150px]" src={tab2} />
           </div>
         </div>
-        <div className=" flex items-center w-full justify-between  ">
-          <div className="flex font-medium w-1/3 text-start flex-col items-start gap-4">
+        <div className=" flex gap-6 flex-col lg:flex-row items-center w-full justify-between  ">
+          <div className="flex font-medium  w-full lg:w-1/3  text-center lg:text-start flex-col items-center lg:items-start gap-4">
             <div className="h-12 text-2xl  w-12 flex items-center justify-center rounded-full bg-[#386A8B] text-white">
               3
             </div>
@@ -54,7 +54,7 @@ const EngineerTab = () => {
               communication.
             </p>
           </div>
-          <div className="w-1/3 flex items-center justify-start">
+          <div className=" w-full lg:w-1/3 flex items-center justify-center lg:justify-start">
             <img className="w-[150px]" src={tab3} />
           </div>
         </div>

@@ -22,7 +22,7 @@ function App() {
     pathname === "/signup" ||
     pathname === "/dashboard";
   return (
-    <div className="flex    font-euclid   items-center justify-center flex-col">
+    <div className="flex font-euclid   items-center justify-center flex-col">
       {!showReusables && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />

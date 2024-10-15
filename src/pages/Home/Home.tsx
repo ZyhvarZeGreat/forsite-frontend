@@ -7,7 +7,7 @@ import Purpose from "../../components/Home Components/Sections/Purpose";
 import Testimonials from "../../components/Home Components/Sections/Testimonials";
 const Home = () => {
   return (
-    <div className="w-full gap-12 mt-10   flex items-center justify-center flex-col">
+    <div className="w-full px-6 xl:px-0    gap-12 mt-10   flex items-center justify-center flex-col">
       <Hero />
 
       <Purpose />

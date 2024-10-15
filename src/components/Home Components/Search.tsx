@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 import { SearchNormal, Location } from "iconsax-react";
 const Search = () => {
   return (
-    <div className=" shadow-xl px-4 text-[#4B5B65] z-20 font-semibold flex gap-8 w-full items-center -bottom-8 rounded-[8px] bg-white  absolute h-[80px] max-w-[1037px]">
+    <div className=" hidden xl:flex shadow-xl px-4 text-[#4B5B65] z-20 font-semibold s gap-8 w-full items-center -bottom-8 rounded-[8px] bg-white  absolute h-[80px] max-w-[1037px]">
       <div className="w-1/2 relative h-full">
         <Input
           className="h-full px-8  border-none focus:outline-none"
