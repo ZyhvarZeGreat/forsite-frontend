@@ -1,12 +1,13 @@
+import Quotes_Table from "../../../components/Dashboard Components/Bid Components/Quotes_Table";
 import {
   Tabs,
   TabsList,
   TabsTrigger,
   TabsContent,
-} from "../../components/ui/tabs";
-import Consult_Table from "../../components/Home Components/Consult Components/Consult_Table";
+} from "../../../components/ui/tabs";
+
 import { Link } from "react-router-dom";
-const Applications = () => {
+const ContractsStats = () => {
   const data = [
     {
       application_id: "#657899832",
@@ -59,11 +60,7 @@ const Applications = () => {
     },
   ];
   return (
-    <div className=" max-w-[1440px] w-full mt-24 flex flex-col item-cener justify-center">
-      <div className="flex items-start my-16 w-full">
-        <h1 className="text-3xl  font-semibold"> Applications manager </h1>
-      </div>
-
+    <div className=" max-w-[1440px] w-full mt-8 flex flex-col item-cener justify-center">
       <div className="flex flex-col border border-gray-300 rounded-lg mb-32 items-center justify-center w-full">
         <div className="flex items-center px-6 justify-between w-full">
           <Tabs
@@ -76,19 +73,19 @@ const Applications = () => {
                   className=" text-lg  data-[state=active]:rounded-full py-4  rounded-l-none  h-full "
                   value="all"
                 >
-                  <Link to="?status=all">All Applications</Link>
+                  <Link to="?status=all">All Quotes</Link>
                 </TabsTrigger>
                 <TabsTrigger
                   className=" rounded-l-none data-[state=active]:rounded-full py-4 text-lg h-full "
                   value="pending"
                 >
-                  <Link to="?status=pending">Pending</Link>
+                  <Link to="?status=all">Accepted Quotes</Link>
                 </TabsTrigger>
                 <TabsTrigger
                   className=" rounded-l-none data-[state=active]:rounded-full  py-4 text-lg h-full "
                   value="converted"
                 >
-                  <Link to="?status=converted">Converted</Link>
+                  <Link to="?status=converted">Pending Quotes</Link>
                 </TabsTrigger>
               </TabsList>
               <div className="flex flex-col border py-4 px-8 rounded-2xl border-[#386A8B] text-[#386A8B] ">
@@ -100,13 +97,13 @@ const Applications = () => {
             </div>
 
             <TabsContent className="w-full" value="all">
-              <Consult_Table invoices={data} />
+              <Quotes_Table invoices={data} />
             </TabsContent>
             <TabsContent className="w-full" value="pending">
-              <Consult_Table invoices={data} />
+              <Quotes_Table invoices={data} />
             </TabsContent>
             <TabsContent className="w-full" value="converted">
-              <Consult_Table invoices={data} />
+              <Quotes_Table invoices={data} />
             </TabsContent>
           </Tabs>
         </div>
@@ -115,4 +112,4 @@ const Applications = () => {
   );
 };
 
-export default Applications;
+export default ContractsStats;
